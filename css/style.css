@@ -195,6 +195,19 @@ body {
 }
 /*<!--нижнее меню OUT-->*/
 
+/*<!--Filters IN-->*/
+.button-caption {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--color-font-normal);
+}
+
+.button-caption:hover,
+.button-caption:focus {
+  color: var(--color-font-accent);
+}
+/*<!--Filters IN-->*/
+
 /*<!--models  IN-->*/
 .models-title-item {
   font-weight: 700;
