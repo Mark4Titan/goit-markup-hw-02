@@ -14,29 +14,58 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.714;
 }
 
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  /* в параграфах і заголовках скидаємо марджен */
+  margin: 0;
+}
+
+ul,
+ol {
+  /* в списках скидаємо відступи (зовнішні і внутрішні) */
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  /* усі зображення стали блоками */
+  display: block;
+}
+
+.link {
+  /* нижня лінія */
+  text-decoration: none;
+}
+
+.address {
+  /* скидає італік */
+  font-style: normal;
+}
+
+.cotainer {
+  /* основні параметри контейнера */
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.lists-without-dots {
+  /* вимикає цяточки в списках */
   list-style: none;
 }
 
-/*<!--шапка  IN -->*/
+/* ================== навігація IN ==================*/
 
 .logotype {
-  text-decoration: none;
-}
-
-.logotype-accent {
-  font-family: var(--title-font);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--color-font-accent);
-}
-
-.logotype-normal {
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
@@ -45,7 +74,7 @@ ul {
   color: var(--color-font-normal);
 }
 
-.navigation-list-link {
+.nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142px;
@@ -54,45 +83,18 @@ ul {
   color: var(--color-font-normal);
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-  color: var(--color-font-accent);
-}
-
-.contact-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--color-font-normal);
-}
-
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--color-font-accent);
-}
-
-.contact-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--color-font-normal);
-}
-
-.contact-tel:hover,
-.contact-tel:focus {
+.nav:hover,
+.nav:focus {
   color: var(--color-font-accent);
 }
 
 .accent {
   color: var(--color-font-accent);
 }
-/*<!--шапка  OUT -->*/
 
-/* <!--баннер  IN-->*/
+/* ================== навігація OUT ==================*/
+
+/* <!--hero  IN-->*/
 .hero {
   background-color: var(--bg-footer-color);
 }
@@ -116,19 +118,15 @@ ul {
   cursor: pointer;
 }
 
-.hero-button:hover,
-.hero-button:focus {
-}
-/* <!--баннер  OUT-->*/
+/* <!--hero  OUT-->*/
 
-/*<!--перечень  IN-->*/
+/*<!--<!--benefits-->  IN-->*/
 .title-advantages {
   font-size: 0px;
 }
 .advantages-title-item {
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-font-normal);
 }
@@ -136,80 +134,34 @@ ul {
 .advantages-paragraph-item {
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 0.03em;
   color: var(--color-font-gray);
 }
-/*<!--перечень  OUT-->*/
+/*<!--<!--benefits-->  OUT-->*/
 
 /*<!--Чем мы занимаемся  IN-->*/
-.title-What-we-do {
+.What-and-what-we-do {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-font-normal);
 }
-/*<!--Чем мы занимаемся  OUT-->*/
 
-/*<!--команда  IN-->*/
-.title-team {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  color: var(--color-font-normal);
-}
-
-.team-title {
+.text {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
+}
+
+.team-title {
   color: var(--color-font-normal);
 }
 
 .team-paragraph-item {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
   color: var(--color-font-gray);
 }
-/*<!--команда  OUT-->*/
 
-/*<!--нижнее меню IN-->*/
-.address-contact-geolocation-link,
-.address-contact-link {
-  text-decoration: none;
-}
-
-.logotype-footer {
-  font-family: var(--title-font);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: var(--color-font-light);
-}
-
-.address-contact-geolocation-link {
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.714px;
-  letter-spacing: 0.03em;
-  color: var(--color-font-light);
-}
-
-.address-contact-link {
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.714px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.address-contact-link:hover,
-.address-contact-link:focus {
-}
-/*<!--нижнее меню OUT-->*/
+/*<!--Чем мы занимаемся  OUT-->*/
 
 /*<!--Filters IN-->*/
 .button-caption {
@@ -228,12 +180,6 @@ ul {
   color: var(--color-font-light);
   background-color: var(--color-font-accent);
 }
-/*<!--Filters IN-->*/
-
-/*<!--models  IN-->*/
-.footer {
-  background-color: var(--bg-footer-color);
-}
 
 .models-title-item {
   font-weight: 700;
@@ -245,8 +191,35 @@ ul {
 .models-paragraph-item {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.875px;
+  /* line-height: 1.875px; */
   letter-spacing: 0.03em;
   color: var(--color-font-gray);
 }
-/*<!--models  OUT-->*/
+/*<!--Filters  OUT-->*/
+
+/*<!--footer IN-->*/
+
+.logotype-footer {
+  color: var(--color-font-light);
+}
+
+.contact {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714px;
+  letter-spacing: 0.03em;
+}
+
+.address-contact-geolocation-link {
+  color: var(--color-font-light);
+}
+
+.address-contact-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+  background-color: var(--bg-footer-color);
+}
+/*<!--footer OUT-->*/
