@@ -195,10 +195,18 @@ img {
 .models-paragraph-item {
   font-weight: 400;
   font-size: 16px;
-  /* line-height: 1.875px; */
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--color-font-gray);
 }
+
+.href-item {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: var(--color-font-normal);
+}
+
 /*<!--Filters  OUT-->*/
 
 /*<!--footer IN-->*/
